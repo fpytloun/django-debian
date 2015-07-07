@@ -1,0 +1,3 @@
+bin/manage.py     usr/lib/django-debian/bin/
+bin/gunicorn_start.sh     usr/lib/django-debian/bin/
+templates/*   usr/share/django-debian/templates

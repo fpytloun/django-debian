@@ -1,0 +1,6 @@
+*.pyc
+*.pyo
+.ropeproject
+*.egg-info
+.pybuild
+debian/django-debian

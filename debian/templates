@@ -1,0 +1,34 @@
+Template: django-helpdesk/user
+Type: string
+Description: System user to run with
+Default: www-data
+
+Template: django-helpdesk/group
+Type: string
+Description: System group to run with
+Default: www-data
+
+Template: django-helpdesk/debug
+Type: boolean
+Description: Enable debug
+Default: false
+
+Template: django-helpdesk/bind_host
+Type: string
+Description: Bind host
+Default: 0.0.0.0
+
+Template: django-helpdesk/bind_port
+Type: string
+Description: Bind port
+Default: 8080
+
+Template: django-helpdesk/workers
+Type: string
+Description: Number of workers, eg. for gunicorn. Defaults to number of CPUs
+
+Template: django-helpdesk/log_level
+Type: select
+Description: Log level of gunicorn process
+Choices: debug, info, warning, error, critical
+Default: info

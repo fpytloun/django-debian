@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+export DH_VIRTUALENV_INSTALL_ROOT=/usr/lib
+
+%:
+	dh $@ --with python2 --buildsystem=pybuild
+	# Use following to build with dh-python
+	# dh $@ --with python-virtualenv --python /usr/bin/python --no-test

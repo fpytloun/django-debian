@@ -1,0 +1,5 @@
+var/log/django-debian
+var/lib/django-debian/static
+var/lib/django-debian/media
+etc/django-debian/templates
+usr/share/django-debian/templates

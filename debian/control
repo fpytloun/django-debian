@@ -1,0 +1,18 @@
+Source: django-debian
+Maintainer: Filip Pytloun <filip.pytloun@tcpcloud.eu>
+# For python modules, it should be python
+# Section: python
+# But for complete django projects, use web
+Section: web
+Priority: optional
+Build-Depends: debhelper (>= 9), python, python-dev, dh-python, python-setuptools
+# Following for dh-virtualenv + dev packages required by packages, installed via pip
+# Build-Depends: debhelper (>= 9), python, python-dev, python-virtualenv, dh-virtualenv (>= 0.9), dh-python, python-setuptools
+Standards-Version: 3.9.1
+X-Python-Version: >= 2.7
+
+Package: django-debian
+Architecture: any
+Pre-Depends: dpkg (>= 1.16.1), python, ${misc:Pre-Depends}, debconf
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Simple Django based debian with API
